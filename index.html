@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oráculo Literário</title>
+    <!-- Link para o CSS do Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Oráculo Literário</h1>
+        <div>
+            <input type="text" id="campo-busca" placeholder="Digite o nome de um livro">
+            <button id="botao-busca">🔎</button>
+        </div>
+    </header>
+
+    <!-- Contêiner para os botões de filtro de tag -->
+    <div id="filtros-container" class="filtros-container">
+        <!-- Os botões de tag serão inseridos aqui via JavaScript -->
+    </div>
+
+    <main>
+        <!-- Estrutura do Carrossel Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper" id="livros-container">
+                <!-- Os cards dos livros serão inseridos aqui via JavaScript -->
+            </div>
+            <!-- Adiciona botões de navegação -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Adiciona a paginação -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-location">
+            <p>Brasil</p>
+        </div>
+        <ul class="footer-links">
+            <li>
+                <a href="https://github.com/Heloisa-Oliveira1">Github</a>
+            </li>
+            <li>
+                <a href="https://www.alura.com.br/">Alura</a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- Link para o JS do Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Script para carregar os dados e inicializar o carrossel -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+[
+  {
+    "nome": "Harry Potter e a Pedra Filosofal",
+    "descricao": "Harry Potter e a Pedra Filosofal conta a história de Harry, um garoto que descobre ser bruxo e vai estudar em Hogwarts. Lá, ele faz amigos, enfrenta desafios e se envolve no mistério da Pedra Filosofal, um objeto mágico poderoso. É o início de sua jornada no mundo da magia.",
+    "data_lancamento": "1997",
+    "link": "https://pt.wikipedia.org/wiki/Harry_Potter_e_a_Pedra_Filosofal",
+    "tags": [
+      " #Fantasia",
+      " #Aventura",
+      " #Literatura infantojuvenil"
+    ]
+  },
+  {
+    "nome": "É Assim Que Acaba",
+    "descricao": "É Assim Que Acaba, de Colleen Hoover, conta a história de Lily Bloom, uma jovem que tenta construir uma nova vida em Boston após uma infância marcada por violência doméstica. Ela se apaixona por Ryle, um neurocirurgião encantador, mas o relacionamento começa a revelar comportamentos abusivos. Conforme Lily enfrenta sentimentos conflitantes, seu passado com Atlas, seu primeiro amor, também ressurge. O livro aborda temas como amor, trauma e ciclos de violência, de maneira intensa e emocional.",
+    "data_lancamento": "2016",
+    "link": "https://pt.wikipedia.org/wiki/It_Ends_with_Us",
+    "tags": [
+      " #Romance contemporâneo",
+      " #Drama"
+    ]
+  },
+  {
+    "nome": "Dom Casmurro",
+    "descricao": "Um clássico da literatura brasileira escrito por Machado de Assis. O romance é narrado por Bento Santiago, o 'Dom Casmurro', que conta a história de sua vida e de seu amor de infância, Capitu. A trama principal gira em torno do ciúme e da dúvida sobre a fidelidade de Capitu, levantando a questão se ela o traiu com seu melhor amigo, Escobar.",
+    "data_lancamento": "1899",
+    "link": "https://pt.wikipedia.org/wiki/Dom_Casmurro",
+    "tags": [
+      " #Literatura brasileira",
+      " #Romance",
+      " #Realismo"
+    ]
+  },
+  {
+    "nome": "O Guia do Mochileiro das Galáxias",
+    "descricao": "O primeiro livro da série de comédia e ficção científica de Douglas Adams. A história segue as aventuras de Arthur Dent, um humano que é salvo da destruição da Terra por seu amigo Ford Prefect, um alienígena pesquisador para o guia de viagens intergaláctico 'O Guia do Mochileiro das Galáxias'.",
+    "data_lancamento": "1979",
+    "link": "https://pt.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy",
+    "tags": [
+      " #Ficção científica",
+      " #Comédia",
+      " #Aventura"
+    ]
+  },
+  {
+    "nome": "Orgulho e Preconceito",
+    "descricao": "Um romance da escritora britânica Jane Austen.A história acompanha a espirituosa Elizabeth Bennet, uma das cinco filhas de uma família da pequena nobreza rural inglesa, enquanto ela lida com questões de casamento, moralidade e educação na sociedade da época.O livro explora o desenvolvimento de seu relacionamento com o orgulhoso Sr. Darcy.",
+    "data_lancamento": "1813",
+    "link": "https://pt.wikipedia.org/wiki/Pride_and_Prejudice",
+    "tags": [
+      " #Romance",
+      " #Clássico",
+      " #Sátira"
+    ]
+  },
+  {
+    "nome": "1984",
+    "descricao": "Um romance distópico que se passa na Oceania, um superestado totalitário governado pelo onipresente Grande Irmão (Big Brother). O protagonista, Winston Smith, trabalha no Ministério da Verdade, alterando registros históricos para se alinharem à propaganda do Partido. O livro explora temas como vigilância em massa, repressão política e a manipulação da verdade.",
+    "data_lancamento": "1949",
+    "link": "https://pt.wikipedia.org/wiki/1984_(livro)",
+    "tags": [
+      " #Distopia",
+      " #Ficção científica",
+      " #Ficção política"
+    ]
+  },
+  {
+    "nome": "O Pequeno Príncipe",
+    "descricao": "A história narra o encontro entre um piloto de avião, que sofre uma pane no deserto do Saara, e um pequeno príncipe vindo de outro planeta. Através de suas conversas, o livro aborda de forma poética e filosófica temas como amor, amizade, perda e o sentido da vida, criticando a visão limitada dos adultos.",
+    "data_lancamento": "1943",
+    "link": "https://pt.wikipedia.org/wiki/Le_Petit_Prince",
+    "tags": [
+      " #Literatura infantojuvenil",
+      " #Fábula",
+      " #Filosofia"
+    ]
+  },
+  {
+    "nome": "Cem Anos de Solidão",
+    "descricao": "Considerada uma obra-prima da literatura latino-americana, narra a história da família Buendía ao longo de sete gerações na cidade fictícia de Macondo. O livro é um dos exemplos mais notáveis do realismo mágico, misturando o fantástico e o cotidiano para contar uma história épica sobre amor, guerra, solidão e o destino.",
+    "data_lancamento": "1967",
+    "link": "https://pt.wikipedia.org/wiki/Cem_Anos_de_Solid%C3%A3o",
+    "tags": [
+      " #Realismo mágico",
+      " #Romance",
+      " #Literatura colombiana"
+    ]
+  },
+  {
+    "nome": "O Apanhador no Campo de Centeio",
+    "descricao": "Narra alguns dias na vida do adolescente Holden Caulfield após ser expulso de mais uma escola. O livro é um retrato da angústia juvenil, da rebeldia e da dificuldade de se adaptar a um mundo percebido como falso e hipócrita. É um clássico sobre a transição para a vida adulta.",
+    "data_lancamento": "1951",
+    "link": "https://pt.wikipedia.org/wiki/The_Catcher_in_the_Rye",
+    "tags": [
+      " #Romance de formação",
+      " #Ficção",
+      " #Clássico"
+    ]
+  },
+  {
+    "nome": "O Sol é Para Todos",
+    "descricao": "Ambientado no sul dos Estados Unidos na década de 1930, o livro é narrado pela jovem Scout Finch. Seu pai, o advogado Atticus Finch, defende um homem negro falsamente acusado de estuprar uma mulher branca, expondo as profundas injustiças raciais da época. A obra aborda temas de preconceito, coragem e perda da inocência.",
+    "data_lancamento": "1960",
+    "link": "https://pt.wikipedia.org/wiki/To_Kill_a_Mockingbird",
+    "tags": [
+      " #Ficção",
+      " #Clássico",
+      " #Drama"
+    ]
+  },
+  {
+    "nome": "O Grande Gatsby",
+    "descricao": "Retrato da Era do Jazz nos Estados Unidos, o romance segue o misterioso milionário Jay Gatsby e sua paixão obsessiva por Daisy Buchanan. Narrado por Nick Carraway, o livro explora temas como o sonho americano, a decadência da elite, a riqueza e o idealismo.",
+    "data_lancamento": "1925",
+    "link": "https://pt.wikipedia.org/wiki/O_Grande_Gatsby",
+    "tags": [
+      " #Ficção",
+      " #Clássico",
+      " #Romance"
+    ]
+  },
+  {
+    "nome": "A Revolução dos Bichos",
+    "descricao": "Uma fábula satírica sobre um grupo de animais que toma o controle da fazenda onde vivem, expulsando os humanos. O que começa como um ideal de igualdade e liberdade rapidamente se transforma em uma tirania liderada pelos porcos. A obra é uma alegoria poderosa sobre a Revolução Russa de 1917 e a corrupção do poder.",
+    "data_lancamento": "1945",
+    "link": "https://pt.wikipedia.org/wiki/A_Revolu%C3%A7%C3%A3o_dos_Bichos",
+    "tags": [
+      " #Sátira",
+      " #Fábula política",
+      " #Distopia"
+    ]
+  },
+  {
+    "nome": "Fahrenheit 451",
+    "descricao": "Em um futuro distópico, os livros são proibidos e 'bombeiros' têm a tarefa de queimar qualquer exemplar encontrado. O protagonista, Guy Montag, é um desses bombeiros que começa a questionar sua profissão e a sociedade em que vive. O livro é uma crítica à censura e à perda do pensamento crítico.",
+    "data_lancamento": "1953",
+    "link": "https://pt.wikipedia.org/wiki/Fahrenheit_451",
+    "tags": [
+      " #Distopia",
+      " #Ficção científica",
+      " #Clássico"
+    ]
+  },
+  {
+    "nome": "O Hobbit",
+    "descricao": "A aventura de Bilbo Bolseiro, um hobbit pacato que é convencido pelo mago Gandalf a se juntar a um grupo de anões para recuperar um tesouro guardado pelo dragão Smaug. A jornada o leva por terras perigosas e o transforma em um herói inesperado. É o prelúdio da saga 'O Senhor dos Anéis'.",
+    "data_lancamento": "1937",
+    "link": "https://pt.wikipedia.org/wiki/O_Hobbit",
+    "tags": [
+      " #Fantasia",
+      " #Aventura",
+      " #Literatura infantojuvenil"
+    ]
+  },
+  {
+    "nome": "Crime e Castigo",
+    "descricao": "Um romance psicológico que explora a mente de Raskólnikov, um jovem estudante em São Petersburgo que comete um assassinato por acreditar ter o direito de transgredir a moralidade. A obra mergulha nas consequências de seu ato, abordando temas como culpa, redenção e a natureza humana.",
+    "data_lancamento": "1866",
+    "link": "https://pt.wikipedia.org/wiki/Crime_e_Castigo",
+    "tags": [
+      " #Romance psicológico",
+      " #Ficção",
+      " #Literatura russa"
+    ]
+  },
+  {
+    "nome": "O Alquimista",
+    "descricao": "A história de Santiago, um jovem pastor andaluz que viaja da Espanha ao Egito em busca de um tesouro escondido perto das Pirâmides. O livro é uma jornada simbólica sobre seguir seus sonhos, ouvir o coração e encontrar sua 'Lenda Pessoal'.",
+    "data_lancamento": "1988",
+    "link": "https://pt.wikipedia.org/wiki/O_Alquimista",
+    "tags": [
+      " #Ficção",
+      " #Alegoria",
+      " #Literatura brasileira"
+    ]
+  },
+  {
+    "nome": "O Nome do Vento",
+    "descricao": "Primeiro livro da série 'A Crônica do Matador do Rei', narra a história de Kvothe, um aventureiro e músico lendário. Contada em primeira pessoa, a trama acompanha sua infância como membro de uma trupe de artistas itinerantes, a tragédia que o leva a uma vida de dificuldades e seu ingresso na Universidade para aprender magia.",
+    "data_lancamento": "2007",
+    "link": "https://pt.wikipedia.org/wiki/O_Nome_do_Vento",
+    "tags": [
+      " #Fantasia",
+      " #Aventura",
+      " #Épico"
+    ]
+  },
+  {
+    "nome": "Frankenstein",
+    "descricao": "A história do cientista Victor Frankenstein, que consegue criar vida a partir de matéria inanimada. Horrorizado com sua criação, ele a abandona, dando início a uma trágica perseguição. A obra é considerada um dos primeiros exemplos de ficção científica e explora temas como ambição, isolamento e a natureza da humanidade.",
+    "data_lancamento": "1818",
+    "link": "https://pt.wikipedia.org/wiki/Frankenstein",
+    "tags": [
+      " #Ficção gótica",
+      " #Ficção científica",
+      " #Terror"
+    ]
+  },
+  {
+    "nome": "A Menina que Roubava Livros",
+    "descricao": "Narrado pela Morte, o livro conta a história de Liesel Meminger, uma jovem que encontra consolo roubando livros e compartilhando-os com outros durante a Alemanha Nazista. A trama mostra a vida sob o regime de Hitler, a amizade e o poder das palavras em tempos de guerra. ",
+    "data_lancamento": "2005",
+    "link": "https://pt.wikipedia.org/wiki/A_Menina_que_Roubava_Livros",
+    "tags": [
+      " #Ficção histórica",
+      " #Drama",
+      " #Guerra"
+    ]
+  },
+  {
+    "nome": "Duna",
+    "descricao": "No futuro distante, em um império intergaláctico, a família Atreides assume o controle do planeta desértico Arrakis, única fonte da especiaria 'melange', a substância mais valiosa do universo. A obra é uma complexa trama de política, religião, ecologia e poder, centrada na jornada do jovem Paul Atreides.",
+    "data_lancamento": "1965",
+    "link": "https://pt.wikipedia.org/wiki/Duna_(romance)",
+    "tags": [
+      " #Ficção científica",
+      " #Fantasia",
+      " #Aventura"
+    ]
+  },
+  {
+    "nome": "O Conto da Aia",
+    "descricao": "Em uma distopia teocrática chamada Gilead, as mulheres férteis, conhecidas como 'aias', são forçadas a servir como reprodutoras para a elite governante. A história é contada por Offred, uma dessas aias, que luta para sobreviver e encontrar sua filha. O livro explora temas de opressão, poder e resistência feminina.",
+    "data_lancamento": "1985",
+    "link": "https://pt.wikipedia.org/wiki/O_Conto_da_Aia",
+    "tags": [
+      " #Distopia",
+      " #Ficção especulativa",
+      " #Feminismo"
+    ]
+  },
+  {
+    "nome": "Sapiens: Uma Breve História da Humanidade",
+    "descricao": "Um livro de não ficção que explora a história da humanidade, desde a evolução do Homo sapiens na Idade da Pedra até as revoluções políticas e tecnológicas do século XXI. Harari combina história, antropologia e biologia para explicar como nossa espécie se tornou dominante no planeta.",
+    "data_lancamento": "2011",
+    "link": "https://pt.wikipedia.org/wiki/Sapiens:_Uma_Breve_Hist%C3%B3ria_da_Humanidade",
+    "tags": [
+      " #Não ficção",
+      " #História",
+      " #Antropologia"
+    ]
+  },
+  {
+    "nome": "O Morro dos Ventos Uivantes",
+    "descricao": "Único romance de Emily Brontë, narra a história de amor destrutiva e apaixonada entre Catherine Earnshaw e Heathcliff, um órfão adotado por sua família. A obra é marcada por uma atmosfera sombria e personagens intensos, explorando temas como vingança, classe social e a natureza selvagem da paixão.",
+    "data_lancamento": "1847",
+    "link": "https://pt.wikipedia.org/wiki/O_Morro_dos_Ventos_Uivantes",
+    "tags": [
+      " #Ficção gótica",
+      " #Romance",
+      " #Clássico"
+    ]
+  },
+  {
+    "nome": "A Metamorfose",
+    "descricao": "Uma das obras mais famosas de Franz Kafka, a novela conta a história de Gregor Samsa, um caixeiro-viajante que um dia acorda transformado em um inseto monstruoso. A narrativa explora o isolamento, o absurdo e a alienação do indivíduo na sociedade moderna.",
+    "data_lancamento": "1915",
+    "link": "https://pt.wikipedia.org/wiki/A_Metamorfose",
+    "tags": [
+      " #Ficção modernista",
+      " #Absurdismo",
+      " #Novela"
+    ]
+  },
+  {
+    "nome": "O Processo",
+    "descricao": "Outra obra seminal de Franz Kafka, o romance segue Josef K., um bancário que é preso e processado por uma autoridade remota e inacessível, sem que a natureza de seu crime seja revelada a ele ou ao leitor. O livro é uma exploração surreal e angustiante da burocracia, da culpa e da impotência do indivíduo perante sistemas opressores.",
+    "data_lancamento": "1925",
+    "link": "https://pt.wikipedia.org/wiki/O_Processo",
+    "tags": [
+      " #Ficção modernista",
+      " #Absurdismo",
+      " #Romance"
+    ]
+  }
+]

@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Quicksand:wght@300..700&display=swap'); /* Importa as fontes Cinzel e Quicksand */
+
+* {
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho total do elemento. */
+}
+
+:root {
+    --primary-color: #8ab4f8; /* Define a cor primária (azul claro) como uma variável. */
+    --secondary-color: #e8eaed; /* Cor secundária (cinza claro) */
+    --tertiary-color: #9aa0a6; /* Cor terciária (cinza médio) */
+    --bg-color: #0d0c1d; /* Novo fundo: azul bem escuro, quase preto */
+    --magic-purple: #9b59b6; /* Roxo mágico para detalhes */
+    --glow-color: rgba(155, 89, 182, 0.6); /* Cor do brilho (baseada no roxo) */
+}
+
+body {
+    margin: 0; /* Remove a margem padrão do body. */
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, var(--bg-color) 100%); /* Fundo com gradiente para um efeito de céu noturno */
+    color: var(--secondary-color); /* Define a cor do texto padrão usando a variável --secondary-color. */
+    font-family: "Quicksand", sans-serif; /* Define a família da fonte para Quicksand, com uma fonte sans-serif como alternativa. */
+}
+
+header {
+    padding: 2rem 1rem; /* Define o espaçamento interno (2rem em cima/baixo, 1rem nos lados). */
+    display: flex; /* Habilita o layout flexbox para alinhar os itens. */
+    align-items: center; /* Alinha os itens flex verticalmente ao centro. */
+    justify-content: space-around; /* Distribui os itens com espaço igual ao redor deles. */
+    position: sticky; /* Mantém o cabeçalho fixo no topo da janela ao rolar a página. */
+    top: 0; /* Define a posição do topo para o elemento sticky. */
+    background: rgba(13, 12, 29, 0.8); /* Fundo do header com transparência */
+    backdrop-filter: blur(10px); /* Efeito de desfoque para o fundo do header */
+    z-index: 10; /* Garante que o cabeçalho fique sobre outros elementos da página. */
+    border-bottom: 1px solid var(--magic-purple); /* Borda roxa na parte inferior. */
+    gap: 1rem; /* Define um espaçamento de 1rem entre os elementos flex. */
+}
+
+header h1 {
+    font-family: 'Cinzel', serif; /* Usa a fonte Cinzel para o título principal */
+    font-size: 2rem; /* Aumenta o tamanho da fonte. */
+    margin: 0; /* Remove a margem padrão do h1. */
+    font-weight: 700; /* Define o peso da fonte. */
+    white-space: nowrap; /* Impede que o texto do título quebre em várias linhas. */
+    color: var(--primary-color);
+    text-shadow: 0 0 8px var(--glow-color), 0 0 12px var(--primary-color); /* Efeito de brilho */
+}
+
+div input {
+    padding: 0.375rem 0.75rem; /* Define o espaçamento interno do campo de texto. */
+    border-radius: 1rem; /* Arredonda as bordas do campo. */
+    border: 1px solid var(--tertiary-color); /* Define a cor e a espessura da borda. */
+    background: var(--bg-color); /* Define a cor de fundo. */
+    font-family: inherit; /* Faz o input herdar a fonte do elemento pai (body). */
+    font-size: 1.5rem; /* Define o tamanho da fonte do texto digitado. */
+    transition: all 0.2s ease; /* Adiciona uma transição suave para todas as propriedades ao mudar de estado. */
+    width: 30rem; /* Define a largura do campo de input. */
+    color: var(--secondary-color); /* Define a cor do texto digitado. */
+    margin-right: .5rem; /* Adiciona uma margem à direita para separar do botão. */
+}
+
+div input::placeholder {
+    font-size: 1.2rem; /* Define o tamanho da fonte para o texto do placeholder. */
+    font-weight: 300; /* Define o peso da fonte para o placeholder como leve. */
+    color: var(--tertiary-color); /* Define a cor do texto do placeholder. */
+}
+
+div input:focus {
+    outline: none; /* Remove a borda de foco padrão do navegador. */
+    border-color: var(--magic-purple); /* Muda a cor da borda quando o input está em foco. */
+    box-shadow: 0 0 10px var(--glow-color); /* Adiciona uma sombra roxa para indicar foco. */
+}
+
+#botao-busca {
+    padding: 1rem 2rem; /* Define o espaçamento interno do botão. */
+    border-radius: 1rem; /* Arredonda as bordas do botão. */
+    border: none; /* Remove a borda padrão do botão. */
+    cursor: pointer; /* Muda o cursor para uma mão para indicar que é clicável. */
+    font-family: inherit; /* Herda a família da fonte do elemento pai. */
+    font-weight: 500; /* Define o peso da fonte como médio. */
+    font-size: 1rem; /* Define o tamanho da fonte do texto do botão. */
+    white-space: nowrap; /* Impede que o texto do botão quebre em várias linhas. */
+    transition: background-color 0.2s ease, color 0.2s ease; /* Adiciona uma transição suave para a cor de fundo e a cor do texto. */
+    background-color: transparent; /* Fundo do botão transparente */
+    color: var(--primary-color); /* Cor do texto do botão. */
+    border: 1px solid var(--primary-color); /* Borda azul. */
+}
+
+#botao-busca:hover {
+    background-color: var(--magic-purple); /* Muda a cor de fundo para roxo. */
+    color: var(--secondary-color); /* Muda a cor do texto. */
+    box-shadow: 0 0 15px var(--glow-color); /* Adiciona sombra para destaque. */
+}
+
+#botao-busca:active {
+    transform: scale(0.98); /* Cria um efeito de clique diminuindo ligeiramente o tamanho do botão. */
+}
+
+main {
+    overflow-y: auto; /* Melhora a rolagem */
+    max-width: 80rem; /* Define a largura máxima para o conteúdo principal. */
+    margin: 0 auto; /* Centraliza o conteúdo principal horizontalmente na página. */
+    margin-top: 2rem; /* Adiciona uma margem no topo para separar do cabeçalho. */
+    height: calc(100vh - 10rem - 4rem); /* Calcula a altura para preencher o espaço restante. */
+    padding: 1rem;
+}
+
+/* Estilo do card dentro do slide */
+.swiper-slide .card {
+    background: rgba(27, 39, 53, 0.5); /* Fundo semitransparente para o card */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 1.5rem; /* Espaçamento interno */
+    border: 1px solid var(--magic-purple); /* Borda roxa */
+    box-shadow: 0 0 15px var(--glow-color); /* Sombra para efeito de brilho */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+    height: 100%; /* Garante que todos os cards tenham a mesma altura */
+    display: flex;
+    flex-direction: column;
+}
+
+article:hover, .swiper-slide .card:hover {
+    transform: translateY(-10px) scale(1.03); /* Levanta e aumenta o card */
+    box-shadow: 0 0 25px var(--glow-color); /* Intensifica o brilho no hover */
+}
+
+article h2 {
+    font-family: 'Cinzel', serif; /* Fonte Cinzel para os títulos dos livros */
+    margin-top: 0; /* Remove a margem superior do título. */
+    font-weight: 600; /* Define o peso da fonte como semi-negrito. */
+    font-size: 1.6rem; /* Define o tamanho da fonte do título. */
+    border-bottom: none; /* Remove a borda inferior. */
+    padding-bottom: 0; /* Remove o espaçamento interno inferior. */
+    margin-bottom: 0.5rem; /* Adiciona uma pequena margem inferior. */
+    color: var(--primary-color); /* Define a cor do texto do título. */
+}
+
+article p {
+    margin: 0.5rem 0; /* Define as margens superior e inferior do parágrafo. */
+    line-height: 1.6; /* Aumenta a altura da linha para melhor legibilidade. */
+    font-size: 1rem; /* Define o tamanho da fonte do parágrafo. */
+    margin-bottom: 0.5rem; /* Adiciona uma margem inferior. */
+    color: var(--secondary-color); /* Define a cor do texto. */
+    flex-grow: 1; /* Faz o parágrafo ocupar o espaço disponível */
+}
+
+article p strong {
+    color: var(--tertiary-color); /* Define a cor para o texto em negrito. */
+    font-weight: 400; /* Define o peso da fonte como normal. */
+}
+
+article a {
+    color: var(--primary-color); /* Define a cor do link. */
+    text-decoration: none; /* Remove o sublinhado padrão do link. */
+    font-weight: 500; /* Define o peso da fonte. */
+    align-self: flex-start; /* Alinha o link no início do eixo transversal */
+}
+
+article a:hover {
+    text-decoration: underline; /* Adiciona um sublinhado quando o mouse está sobre o link. */
+}
+
+.footer {
+    position: absolute; /* Define o posicionamento como absoluto em relação ao body. */
+    bottom: 0; /* Alinha o rodapé na parte inferior da página. */
+    left: 0; /* Alinha o rodapé à esquerda da página. */
+    width: 100%; /* Faz o rodapé ocupar 100% da largura. */
+    color: var(--tertiary-color); /* Define a cor do texto do rodapé. */
+    background-color: transparent; /* Fundo transparente */
+    padding: 15px 20px; /* Define o espaçamento interno. */
+    border-top: 1px solid #3c4043; /* Adiciona uma linha separadora no topo. */
+    font-size: 0.8rem; /* Define o tamanho da fonte do texto. */
+}
+
+.footer-location {
+    color: #9aa0a6; /* Define a cor do texto da localização. */
+    margin-bottom: 10px; /* Adiciona uma margem inferior para separar dos links. */
+}
+
+.footer-links {
+    list-style: none; /* Remove os marcadores de bolinha da lista. */
+    display: flex; /* Habilita o layout flexbox. */
+    flex-wrap: wrap; /* Permite que os itens da lista quebrem para a próxima linha se não houver espaço. */
+    justify-content: center; /* Centraliza os links horizontalmente. */
+    gap: 15px; /* Define um espaçamento de 15px entre os links. */
+}
+
+.footer-links a {
+    color: var(--secondary-color); /* Define a cor dos links. */
+    text-decoration: none; /* Remove o sublinhado padrão. */
+    transition: color 0.2s; /* Adiciona uma transição suave para a mudança de cor. */
+}
+
+.footer-links a:hover {
+    color: var(--primary-color); /* Muda a cor do link ao passar o mouse. */
+}
+
+/* Estilização dos botões de navegação do Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--magic-purple); /* Cor das setas */
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    color: var(--primary-color); /* Cor ao passar o mouse */
+    transform: scale(1.2); /* Aumenta o tamanho no hover */
+    text-shadow: 0 0 10px var(--glow-color); /* Adiciona brilho */
+}
+
+/* Estilização da paginação (bolinhas) do Swiper */
+.swiper-pagination-bullet {
+    background-color: var(--tertiary-color);
+    opacity: 0.7;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--magic-purple);
+    opacity: 1;
+    box-shadow: 0 0 8px var(--glow-color);
+}
+
+@media (max-width: 768px) {
+    header { /* Inicia um bloco de regras para telas com largura máxima de 768px (tablets). */
+        flex-direction: column; /* Organiza os itens do cabeçalho em uma coluna. */
+        padding: 1rem; /* Reduz o espaçamento interno do cabeçalho. */
+    }
+
+    header h1 { /* Estiliza o h1 em telas menores. */
+        text-align: center; /* Centraliza o texto do título. */
+        margin-bottom: 1rem; /* Adiciona uma margem inferior para separar do campo de busca. */
+    }
+
+    div input { /* Estiliza o input em telas menores. */
+        width: 90vw; /* Define a largura do input para 90% da largura da janela. */
+        font-size: 1.2rem; /* Reduz o tamanho da fonte do input. */
+    }
+
+    main { /* Estiliza o conteúdo principal em telas menores. */
+        padding: 0 1rem; /* Adiciona espaçamento lateral para evitar que o texto toque as bordas. */
+    }
+
+    article:hover { /* Estiliza o artigo em telas menores. */
+        transform: translateY(-5px); /* Efeito de hover mais sutil em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 { /* Inicia um bloco de regras para telas com largura máxima de 480px (celulares). */
+        font-size: 1rem; /* Reduz ainda mais o tamanho da fonte do título. */
+        max-width: 70%; /* Define uma largura máxima para o título. */
+        word-wrap: break-word; /* Permite que palavras longas quebrem para a próxima linha. */
+    }
+
+    div input, /* Estiliza o input e seu placeholder em telas muito pequenas. */
+    div input::placeholder {
+        font-size: 1rem; /* Reduz o tamanho da fonte para melhor ajuste. */
+    }
+
+    article h2 { /* Estiliza o h2 do artigo em telas muito pequenas. */
+        font-size: 1.3rem; /* Reduz o tamanho da fonte do título do artigo. */
+    }
+
+    div { /* Estiliza a div que contém o input e o botão em telas muito pequenas. */
+        display: flex; /* Habilita o layout flexbox. */
+        align-items: center; /* Alinha os itens verticalmente ao centro. */
+        justify-content: center; /* Centraliza os itens horizontalmente. */
+        flex-direction: column; /* Organiza os itens em uma coluna. */
+        gap: 0.5rem; /* Define um espaçamento entre o input e o botão. */
+    }
+
+    .footer { /* Estiliza o rodapé em telas muito pequenas. */
+        display: none; /* Oculta o rodapé para economizar espaço. */
+    }
+
+    button { /* Estiliza o botão em telas muito pequenas. */
+        margin-top: 1rem; /* Adiciona uma margem no topo para separar do input. */
+    }
+}
