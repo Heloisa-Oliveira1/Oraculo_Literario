@@ -13,14 +13,30 @@
         <h1>Oráculo Literário</h1>
         <div>
             <input type="text" id="campo-busca" placeholder="Digite o nome de um livro">
+            <div id="loading-spinner" class="spinner" style="display: none;"></div>
             <button id="botao-busca">🔎</button>
         </div>
+        <button id="theme-toggle-btn" class="theme-btn" title="Alterar tema">☀️</button>
+        <button id="random-book-btn" class="theme-btn" title="Sugira um livro aleatório">🎲</button>
     </header>
 
     <!-- Contêiner para os botões de filtro de tag -->
     <div id="filtros-container" class="filtros-container">
         <!-- Os botões de tag serão inseridos aqui via JavaScript -->
+        <button id="favoritos-btn" class="filtro-tag">❤️ Meus Favoritos</button>
         <button id="limpar-filtros" class="filtro-tag" style="display: none;">Limpar filtros</button>
+    </div>
+
+    <!-- Controles de Ordenação -->
+    <div class="sort-container">
+        <label for="sort-options">Ordenar por:</label>
+        <select id="sort-options">
+            <option value="relevancia">Relevância</option>
+            <option value="nome-az">Nome (A-Z)</option>
+            <option value="nome-za">Nome (Z-A)</option>
+            <option value="ano-recente">Ano (Mais Recente)</option>
+            <option value="ano-antigo">Ano (Mais Antigo)</option>
+        </select>
     </div>
 
     <main>
@@ -53,6 +69,17 @@
 
     <!-- Link para o JS do Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Botão para rolar para o topo -->
+    <button id="scroll-to-top" title="Voltar ao topo">▲</button>
+
+    <!-- Modal de Detalhes do Livro -->
+    <div id="book-details-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn" title="Fechar">&times;</button>
+            <div id="modal-book-content"></div>
+        </div>
+    </div>
 
     <!-- Script para carregar os dados e inicializar o carrossel -->
     <script src="script.js"></script>

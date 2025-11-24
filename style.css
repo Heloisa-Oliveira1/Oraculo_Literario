@@ -13,11 +13,25 @@
     --glow-color: rgba(155, 89, 182, 0.6); /* Cor do brilho (baseada no roxo) */
 }
 
+body.light-theme {
+    --primary-color: #1a73e8; /* Azul mais forte para contraste */
+    --secondary-color: #202124; /* Texto escuro */
+    --tertiary-color: #5f6368; /* Cinza para textos secundários */
+    --bg-color: #f8f9fa; /* Fundo branco-acinzentado */
+    --magic-purple: #8e44ad; /* Roxo um pouco mais escuro */
+    --glow-color: rgba(142, 68, 173, 0.3); /* Brilho mais sutil */
+}
+
 body {
     margin: 0; /* Remove a margem padrão do body. */
     background: radial-gradient(ellipse at bottom, #1b2735 0%, var(--bg-color) 100%); /* Fundo com gradiente para um efeito de céu noturno */
     color: var(--secondary-color); /* Define a cor do texto padrão usando a variável --secondary-color. */
     font-family: "Quicksand", sans-serif; /* Define a família da fonte para Quicksand, com uma fonte sans-serif como alternativa. */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-theme {
+    background: var(--bg-color);
 }
 
 header {
@@ -27,7 +41,7 @@ header {
     justify-content: space-around; /* Distribui os itens com espaço igual ao redor deles. */
     position: sticky; /* Mantém o cabeçalho fixo no topo da janela ao rolar a página. */
     top: 0; /* Define a posição do topo para o elemento sticky. */
-    background: rgba(13, 12, 29, 0.8); /* Fundo do header com transparência */
+    background: color-mix(in srgb, var(--bg-color) 80%, transparent); /* Fundo do header com transparência */
     backdrop-filter: blur(10px); /* Efeito de desfoque para o fundo do header */
     z-index: 10; /* Garante que o cabeçalho fique sobre outros elementos da página. */
     border-bottom: 1px solid var(--magic-purple); /* Borda roxa na parte inferior. */
@@ -94,6 +108,22 @@ div input:focus {
     transform: scale(0.98); /* Cria um efeito de clique diminuindo ligeiramente o tamanho do botão. */
 }
 
+/* Estilo para o botão de tema */
+.theme-btn {
+    background: none;
+    border: 1px solid var(--tertiary-color);
+    color: var(--secondary-color);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
 main {
     overflow-y: auto; /* Melhora a rolagem */
     max-width: 80rem; /* Define a largura máxima para o conteúdo principal. */
@@ -126,6 +156,11 @@ main {
     border-color: var(--primary-color);
 }
 
+.light-theme .filtro-tag:hover {
+    background-color: #e8e8e8;
+    border-color: var(--primary-color);
+}
+
 .filtro-tag.ativo {
     background-color: var(--magic-purple);
     color: #fff;
@@ -149,6 +184,30 @@ main {
     text-decoration: underline;
 }
 
+/* Estilos para o container de ordenação */
+.sort-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sort-container label {
+    color: var(--tertiary-color);
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+#sort-options {
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--tertiary-color);
+    border-radius: 15px;
+    padding: 8px 12px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
 /* Estilo para o texto destacado pela busca */
 mark {
     background-color: var(--primary-color);
@@ -156,11 +215,16 @@ mark {
     border-radius: 3px;
 }
 
+.light-theme mark {
+    background-color: #fdff85; /* Amarelo clássico para o tema claro */
+    color: #333;
+}
+
 /* Mensagem de nenhum resultado */
 .nenhum-resultado { text-align: center; font-size: 1.2rem; padding: 2rem; }
 
 /* Estilo do card dentro do slide */
-.swiper-slide .card {
+article, .swiper-slide .card {
     background: rgba(27, 39, 53, 0.5); /* Fundo semitransparente para o card */
     border-radius: 15px; /* Bordas arredondadas */
     padding: 1.5rem; /* Espaçamento interno */
@@ -171,6 +235,28 @@ mark {
     height: 100%; /* Garante que todos os cards tenham a mesma altura */
     display: flex;
     flex-direction: column;
+}
+
+/* Estilo para o botão de Favorito no card */
+.favorite-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.2s ease;
+}
+
+.favorite-btn:hover {
+    transform: scale(1.2);
+}
+
+.favorite-btn.ativo {
+    color: #e74c3c; /* Vermelho para o coração ativo */
+    text-shadow: 0 0 10px #e74c3c;
 }
 
 article:hover, .swiper-slide .card:hover {
@@ -288,6 +374,61 @@ article a:hover {
     }
 }
 
+/* Estilos para o botão "Rolar para o Topo" */
+#scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--magic-purple);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none; /* Começa escondido */
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 15px var(--glow-color);
+}
+
+#scroll-to-top.show {
+    display: flex;
+    opacity: 1;
+}
+
+#scroll-to-top:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para o Spinner de Carregamento */
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid var(--primary-color);
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    right: 70px; /* Posição ajustada para ficar antes do botão de busca */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@keyframes spin {
+    0% {
+        transform: translateY(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+
+
 @media (max-width: 768px) {
     header { /* Inicia um bloco de regras para telas com largura máxima de 768px (tablets). */
         flex-direction: column; /* Organiza os itens do cabeçalho em uma coluna. */
@@ -343,5 +484,142 @@ article a:hover {
 
     button { /* Estiliza o botão em telas muito pequenas. */
         margin-top: 1rem; /* Adiciona uma margem no topo para separar do input. */
+    }
+}
+
+/* Estilos para o Modal de Detalhes */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+}
+
+.modal-overlay.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+
+.modal-content {
+    background-color: var(--bg-color);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid var(--magic-purple);
+    width: 90%;
+    max-width: 700px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.show .modal-content {
+    transform: scale(1);
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: var(--tertiary-color);
+    font-size: 2.5rem;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.modal-close-btn:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+/* Ajustes no conteúdo do modal */
+#modal-book-content h2 {
+    font-family: 'Cinzel', serif;
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.modal-main-content {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.share-container {
+    border-top: 1px solid var(--tertiary-color);
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.share-container strong {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.share-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.share-btn:hover {
+    transform: scale(1.05);
+}
+
+.share-btn.twitter { background-color: #1DA1F2; }
+.share-btn.facebook { background-color: #1877F2; }
+.share-btn.whatsapp { background-color: #25D366; }
+.share-btn.copy { background-color: var(--tertiary-color); }
+
+.modal-book-cover {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Responsividade para o modal em telas pequenas */
+@media (max-width: 600px) {
+    .modal-main-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .modal-book-cover {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
     }
 }
