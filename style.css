@@ -128,9 +128,8 @@ main {
     overflow-y: auto; /* Melhora a rolagem */
     max-width: 80rem; /* Define a largura máxima para o conteúdo principal. */
     margin: 0 auto; /* Centraliza o conteúdo principal horizontalmente na página. */
-    margin-top: 2rem; /* Adiciona uma margem no topo para separar do cabeçalho. */
-    height: calc(100vh - 10rem - 4rem); /* Calcula a altura para preencher o espaço restante. */
-    padding: 1rem;
+    padding: 2rem 1rem; /* Ajusta o padding para dar espaço do header e do footer */
+    min-height: calc(100vh - 150px - 70px); /* Garante que o main ocupe a maior parte da tela, empurrando o footer para baixo. 150px para o header, 70px para o footer */
 }
 
 /* Estilos para os botões de filtro de gênero */
@@ -301,13 +300,11 @@ article a:hover {
 }
 
 .footer {
-    position: absolute; /* Define o posicionamento como absoluto em relação ao body. */
-    bottom: 0; /* Alinha o rodapé na parte inferior da página. */
-    left: 0; /* Alinha o rodapé à esquerda da página. */
     width: 100%; /* Faz o rodapé ocupar 100% da largura. */
     color: var(--tertiary-color); /* Define a cor do texto do rodapé. */
     background-color: transparent; /* Fundo transparente */
     padding: 15px 20px; /* Define o espaçamento interno. */
+    margin-top: 2rem; /* Adiciona uma margem para separar do conteúdo principal */
     border-top: 1px solid #3c4043; /* Adiciona uma linha separadora no topo. */
     font-size: 0.8rem; /* Define o tamanho da fonte do texto. */
 }
